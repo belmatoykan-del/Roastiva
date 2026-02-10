@@ -1,0 +1,148 @@
+/* Product.cshtml */
+.products-section {
+    background-color: #f5efe6;
+}
+
+.product-card {
+    background-color: #f1e1c8;
+    padding: 2rem;
+    border-radius: 14px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .product-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    }
+
+.product-img {
+    border-radius: 12px;
+    filter: brightness(0.95) contrast(1.05);
+}
+
+.product-img-wrapper {
+    position: relative;
+}
+
+.product-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.product-desc {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.product-meta {
+    font-size: 0.9rem;
+    color: #888;
+    letter-spacing: 0.5px;
+    display: flex;
+    gap: 6px;
+}
+
+.badge-house {
+    background: rgba(59, 47, 47, 0.08);
+    color: #3b2f2f;
+    font-size: 0.65rem;
+    letter-spacing: 0.08em;
+    border-radius: 6px;
+    padding: 4px 8px;
+}
+
+.product-card.house:hover {
+    transform: translateY(-8px) scale(1.01);
+}
+
+/* Badge */
+
+.badge-house {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+
+    background-color: #3b2f2f;
+    color: #f5efe6;
+
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+
+    padding: 6px 10px;
+    border-radius: 6px;
+
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.product-card:hover .badge-house {
+    transform: translateY(-2px);
+    transition: 0.3s ease;
+}
+
+
+/* Detay sayfalar*/
+.product-detail {
+    background-color: #f5efe6;
+}
+
+.detail-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.6rem;
+    margin-bottom: 1rem;
+}
+
+.detail-desc {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.detail-meta {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+    .detail-meta li {
+        margin-bottom: 0.4rem;
+        font-size: 0.9rem;
+        color: #5a4a4a;
+    }
+
+.detail-price {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.detail-image-wrapper {
+    max-width: 420px; /* görselin doðal geniþliði */
+}
+
+.detail-back-btn {
+    display: block;
+    width: 100%;
+    margin-top: 0.75rem;
+    padding: 0.4rem 0;
+    text-align: center;
+    border: 1px solid #3b2f2f;
+    background: transparent;
+    color: #3b2f2f;
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+}
+
+    .detail-back-btn:hover {
+        background-color: #3b2f2f;
+        color: #f5efe6;
+    }
+
+
+
+
+
+
+

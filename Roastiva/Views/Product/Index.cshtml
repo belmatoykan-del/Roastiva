@@ -1,0 +1,65 @@
+﻿@model List<Product>
+
+@{
+    ViewData["Title"] = "Ürünler";
+}
+@section Styles {
+    <link rel="stylesheet" href="~/css/home.css" />
+}
+
+<section class="products-section py-5">
+    <div class="container">
+
+        <!-- Başlık Alanı -->
+        <div class="row mb-5">
+            <div class="col-lg-6">
+                <h2 class="section-title mb-3">Ürünler</h2>
+                <p class="section-text">
+                    Roastiva koleksiyonu, farklı kökenlere ve kavurma profillerine
+                    sahip, özenle seçilmiş kahvelerden oluşur.
+                </p>
+            </div>
+        </div>
+
+        <!-- Ürünler -->
+        <div class="row g-5">
+
+            @foreach (var product in Model)
+            {
+                <div class="col-md-4">
+
+                      <a asp-controller="Product"  asp-action="Detail"  asp-route-id="@product.Id"    class="text-decoration-none text-reset">
+
+                    <div class="product-card h-100 position-relative @(product.Name == "Roastiva House Blend" ? "house" : "")">
+
+                        <div class="product-img-wrapper"> 
+                            <img src="@product.ImageUrl" class="img-fluid product-img"  alt="@product.Name" />
+
+                            @if (product.Name == "Roastiva House Blend")
+                            {
+                                <span class="badge badge-house">House Blend</span>
+                            }
+                        </div>
+
+                        <h5 class="product-title">@product.Name</h5>
+
+                        @if (!string.IsNullOrEmpty(product.ShortDescription))
+                        {
+                            <p class="product-desc">
+                                @product.ShortDescription
+                            </p>
+                        }
+
+                        <div class="product-meta">
+                            <span>@product.Origin</span>
+                            <span>•</span>
+                            <span>@product.RoastLevel</span>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+            }
+        </div>
+
+    </div>
+</section>

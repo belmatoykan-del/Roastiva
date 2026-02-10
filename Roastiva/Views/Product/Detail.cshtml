@@ -1,0 +1,46 @@
+﻿@model Product
+
+@{
+    ViewData["Title"] = Model.Name + " | Roastiva";
+}
+
+<section class="product-detail py-5">
+    <div class="container">
+        <div class="row g-5 align-items-center">
+
+            <!-- Görsel -->
+            <div class="col-lg-6">
+
+                <div class="detail-image-wrapper">
+                    <img src="@Model.ImageUrl" class="img-fluid detail-img" alt="@Model.Name" />
+
+                    <a asp-controller="Product" asp-action="Index" class="btn detail-back-btn">
+                        ← Ürünlere Dön
+                    </a>
+                </div>
+                               
+            </div>
+
+            <!-- Bilgi -->
+            <div class="col-lg-6">
+                <h1 class="detail-title">@Model.Name</h1>
+
+                <p class="detail-desc">
+                    @Model.Description
+                </p>
+
+                <ul class="detail-meta">
+                    <li><strong>Köken:</strong> @Model.Origin</li>
+                    <li><strong>Kavurma:</strong> @Model.RoastLevel</li>
+                    <li><strong>Tadım:</strong> @Model.FlavorNotes</li>
+                </ul>
+
+                <div class="detail-price">
+                    @(Model.Price?.ToString("C") ?? "Fiyat bilgisi yakında")
+                </div>
+            </div>
+
+           
+        </div>
+    </div>
+</section>

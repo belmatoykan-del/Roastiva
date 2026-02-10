@@ -1,0 +1,349 @@
+/*
+    body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f5efe6;
+    color: #3b2f2f;
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+
+/*Header.cshtml************************************************************************/
+/*
+.roastiva-logo {
+    font-family: 'Cormorant', serif; 
+    font-size: 2rem;
+    display: flex;
+    align-items: baseline;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    color: #3b2f2f;
+    margin-left:1.5rem;
+}
+
+    .roastiva-logo .big {
+        font-size: 3rem;
+    }
+
+    .roastiva-logo .lift {
+        position: relative;
+        top: -6px;
+    }
+
+    .roastiva-logo:hover {
+        color: #3b2f2f;
+    }
+   
+/* Navbar zemin */
+/*.roastiva-nav-container {
+    background: linear-gradient(90deg, #f5efe6, #543d3d, #2c1c1c);
+    height: 35px;
+    padding-right: 2rem;
+}
+
+    /* Menü linkleri */
+/*.roastiva-nav .nav-link {
+    color: #f5efe6;
+    font-size: 0.9rem;
+    letter-spacing: 0.08em;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.08em;
+}
+
+        .roastiva-nav .nav-link:hover {
+            color:#c47a2c;
+            
+        }
+
+/* Hamburger */
+/*.navbar-toggler {
+    border: none;
+    
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+.offcanvas {
+    width: 85%;
+    background-color: #f6f0e6;
+}
+
+.offcanvas-header {
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.roastiva-mobile-menu li {
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+.roastiva-mobile-menu a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.25rem;
+    text-decoration: none;
+    color: #4b2e2a;
+    font-size: 0.9rem;
+    letter-spacing: 0.08em;
+}
+
+.roastiva-mobile-menu .has-arrow a::after {
+    content: "›";
+    font-size: 1.4rem;
+}
+
+/*home-page düzenlemeleri  */
+
+
+/*.home-page .roastiva-nav-container {
+    background: #f5efe6;
+}
+
+.home-page .nav-link {
+    color: #3b2f2f;
+}
+
+.home-page .navbar-toggler-icon {
+    color: #3b2f2f;
+    filter: invert(0);
+}
+/***************************************************************************************/
+
+
+
+/*.section-title {
+    font-family: 'Cormorant', serif;
+    font-size: 2.5rem;
+}
+
+
+
+/*About.cshtml, Privacy.cshtml, Process.cshtml*/
+/*.about-section {
+    background-image: url("/img/Arkaplan2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    color: #3b2f2f;
+    overflow: hidden;
+    min-height: 40vh;
+    border-radius: 0 0 2rem 2rem;
+}
+
+.about-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    
+}
+
+.about-section .container {
+    position: relative;
+    z-index: 1;
+}
+
+.coffee-image-wrapper {
+    position: relative;
+}
+
+.coffee-img {
+    position: absolute;
+    right: 0;
+    bottom: -3rem; /* footer’a yaklaþma ayarý */
+    /*max-width: 90%;
+    height: auto;
+    border-radius: 0 0 2rem 0;
+}
+
+
+
+/*Index.cshtml*/
+/*.hero-section {
+    background: linear-gradient(to bottom, #5b4440 0%, #5b4440 55%, rgba(91, 68, 64, 0.95) 65%, rgba(91, 68, 64, 0.85) 72%, rgba(91, 68, 64, 0.65) 80%, rgba(91, 68, 64, 0.35) 88%, #f5efe6 100% );
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    min-height: 40vh;
+   border-radius: 0 0 2rem 2rem;
+}
+
+    .hero-section::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        background: linear-gradient( to bottom, rgba(245, 239, 230, 0), #f5efe6 );
+    }
+
+
+.hero-title {
+    font-family: 'Cormorant Garamond', serif;
+    color: #f5efe6;
+    font-size: 3.8rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-left: 1.5rem;
+    animation: fadeUp 0.8s ease forwards;
+}
+
+.hero-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.05rem;
+    max-width: 600px;
+    line-height: 1.8;
+    color: #f5efe6;
+    margin-left: 1.5rem;
+    animation: fadeUp 0.8s ease forwards;
+    animation-delay: 0.2s;
+}
+
+.hero-btn {
+    border: 1px solid #fff;
+    color: #f5efe6;
+    padding: 10px 30px;
+    border-radius: 6px;
+    background: transparent;
+    margin-left: 1.5rem;
+    animation: fadeUp 0.8s ease forwards;
+    animation-delay: 0.4s;
+}
+
+    .hero-btn:hover {
+        background-color: #f5efe6;
+        color: #3b2f2f;
+        border-color: #fff;
+    }
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 42px;
+    }
+
+    .hero-text {
+        font-size: 16px;
+    }
+}
+
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/*Index.cshtml*/
+/*.process-section {
+    background-color: #f1e1c8 !important;
+    border-radius: 2rem;
+    position: relative;
+    isolation: isolate;
+}
+
+
+.process-img {
+    background-image: url("/img/about-us-hero1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+    min-height: 40vh;
+    border-radius: 0 0 2rem 2rem;
+}
+
+
+/*About.cshtml, Index.cshtml, Process.cshtml*/
+/*.cta-section, .values-section {
+    background: #efe9e0;
+    border-radius: 2rem;
+}
+
+.cta-btn {
+    border: 1px solid #3b2f2f;
+}
+
+    .cta-btn:hover {
+        background-color: #3b2f2f;
+        color: #f5efe6;
+        border-color: #fff;
+    }
+
+.img-fluid {
+    border-radius: 1.5rem;
+}
+
+
+/*Footer.cshtml*/
+/*footer {
+    color: #3b2f2f;
+    padding: 1rem 0;
+    text-align: left;
+}
+
+        footer p {
+            font-style: italic;
+            font-size: 1em;
+            
+        }
+
+
+ /*Product.cshtml*/
+/*.products-section {
+    background-color: #f5efe6;
+}
+
+.product-card {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 14px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .product-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 20px 40px rgba(0,0,0,0.06);
+    }
+
+.product-img {
+    border-radius: 10px;
+}
+
+.product-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.product-desc {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.product-meta {
+    font-size: 0.8rem;
+    color: #888;
+    letter-spacing: 0.5px;
+    display: flex;
+    gap: 6px;
+}
+
+
+

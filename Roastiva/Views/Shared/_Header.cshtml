@@ -1,0 +1,85 @@
+﻿<header class="border-bottom">
+    <div class="container py-3">
+        <div>
+            <a asp-controller="Home" asp-action="Index" class="logo text-decoration-none d-inline-block">
+                <div class="roastiva-logo">
+                    <span class="big">R</span>
+                    <span class="lift">O</span>
+                    <span class="lift">A</span>
+                    <span class="lift">S</span>
+                    <span class="lift">T</span>
+                    <span class="lift">I</span>
+                    <span class="lift">V</span>
+                    <span class="big">A</span>
+                </div>
+            </a>
+        </div>        
+    </div> 
+</header>
+
+<nav class="navbar navbar-expand-lg roastiva-nav">
+    <div class="container roastiva-nav-container d-flex align-items-center justify-content-end">
+
+        <!-- Hamburger -->
+        <button class="navbar-toggler  d-lg-none"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#mobileMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+        <!-- Menü -->
+        <div class="d-none d-lg-block"
+             id="roastivaNavbar">
+            <ul class="navbar-nav gap-4">
+                <li class="nav-item">
+                    <a class="nav-link" asp-controller="Home" asp-action="Index">ANA SAYFA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" asp-controller="Home" asp-action="About">HAKKIMIZDA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" asp-controller="Home" asp-action="Process">SÜREÇ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" asp-controller="Product" asp-action="Index">ÜRÜNLER</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" asp-controller="Home" asp-action="Privacy">İLETİŞİM</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu">
+    <div class="offcanvas-header">
+        <div class="roastiva-logo">
+            <span class="big">R</span>
+            <span class="lift">O</span>
+            <span class="lift">A</span>
+            <span class="lift">S</span>
+            <span class="lift">T</span>
+            <span class="lift">I</span>
+            <span class="lift">V</span>
+            <span class="big">A</span>
+        </div>
+              
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+
+    <div class="offcanvas-body p-0">
+        <ul class="list-unstyled roastiva-mobile-menu">
+            <li><a asp-controller="Home" asp-action="Index">ANA SAYFA</a></li>
+            <li><a asp-controller="Home" asp-action="About">HAKKIMIZDA</a></li>
+            <li><a asp-controller="Home" asp-action="Process">SÜREÇ</a></li>
+            <li class="has-arrow">
+                <a asp-controller="Product" asp-action="Index">ÜRÜNLER</a>
+            </li>
+            <li><a asp-controller="Home" asp-action="Privacy">İLETİŞİM</a></li>
+        </ul>
+    </div>
+</div>

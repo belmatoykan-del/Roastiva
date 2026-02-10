@@ -1,0 +1,128 @@
+﻿@{
+    ViewData["Title"] = "Hakkımızda";
+}
+@section Styles {
+    <link rel="stylesheet" href="~/css/home.css" />
+}
+
+
+<section class="hero-section py-5">
+    <div class="container">
+        <div class="row d-flex align-items-center">
+            <div class="col-lg-6">
+                <h2 class="hero-title mb-4">Sade. Dengeli. Roastiva.</h2>
+
+                <p class="hero-text mb-5">
+                    Kahvenin kökeninden kavrulmasına uzanan yolculuğunu,
+                    dijital bir disiplin ve estetik bir bakış açısıyla yorumluyoruz.
+                    Roastiva, karmaşadan uzak bir deneyim sunar.
+                </p>
+
+                <a asp-controller="Home" asp-action="About" class="btn hero-btn mt-4">
+                    Hikâyemizi Oku
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-6 coffee-image-wrapper">
+        <img src="~/img/coffee.png" class="coffee-img" alt="Roastiva Coffee">
+    </div>
+
+      
+</section>
+
+<section class="values-section py-4 my-3">
+    <div class="container">
+        <div class="row mb-4 ms-2">
+            <div class="col">
+                <h2 class="section-title">Değerlerimiz</h2>
+                <p class="section-subtitle">Roastiva'nın temel taşları</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="value-card p-4 h-100">
+                        <h3 class="value-title mb-3">Kalite</h3>
+                    <p class="value-text">En iyi çekirdekleri seçer, her kavurma sürecini titizlikle yönetiriz.</p>
+                    </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="value-card p-4 h-100">
+                    <h3 class="value-title mb-3">Sadelik</h3>
+                    <p class="value-text">Karmaşadan uzak, sade ve dengeli kahve deneyimleri sunarız.</p>
+                    </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="value-card p-4 h-100">
+                    <h3 class="value-title mb-3">Estetik</h3>
+                    <p class="value-text">Her detayda estetik bir dokunuşla kahvenin güzelliğini ortaya çıkarırız.</p>
+                    </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="process-section py-4 my-3">
+    <div class="container">
+        <div class="row mb-4 ms-2 ">
+            <div class="col">
+                <h2 class="section-title">Kavurma Sürecimiz</h2>
+                <p class="section-subtitle">Kahvenin yolculuğu</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="process-card p-4 h-100">
+                        <h3 class="process-title mb-3">Seçim</h3>
+                    <p class="process-text">En kaliteli yeşil kahve çekirdeklerini titizlikle seçeriz.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="process-card p-4 h-100">
+                        <h3 class="process-title mb-3">Kavurma</h3>
+                    <p class="process-text">Her çekirdeğin karakterini ortaya çıkaran dengeli kavurma teknikleri uygularız.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="process-card p-4 h-100">
+                        <h3 class="process-title mb-3">Paketleme</h3>
+                    <p class="process-text">Tazeliği koruyan, çevre dostu paketleme çözümleri kullanırız.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cta-section py-5 my-3 text-center">
+    <div class="container">
+        <h2 class="cta-title mb-4">Roastiva ile Kahve Deneyimini Yeniden Keşfedin</h2>
+        <p class="cta-text mb-4">Sade, dengeli ve estetik kahve yolculuğuna katılın.</p>
+        <a asp-controller="Product" asp-action="Index" class="btn cta-btn">
+            Ürünlerimizi İncele
+        </a>
+    </div>
+</section>
+
+<section>
+    <div class="container my-3">
+        <div class="row">
+            <div class="col text-center">
+                <img src="~/img/about-us-hero2.jpeg" class="img-fluid rounded" alt="About Roastiva">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+

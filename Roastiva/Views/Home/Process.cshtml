@@ -1,0 +1,56 @@
+﻿@{
+    ViewData["Title"] = "Süreç";
+}
+@section Styles {
+    <link rel="stylesheet" href="~/css/home.css" />
+}
+
+
+<section class="process-section process-img py-5">
+    <div class="container">
+        <div class="row mb-4">
+            <div class="col ms-4">
+                <h2 class="section-title">Kavurma Sürecimiz</h2>
+                <p class="section-subtitle">Kahvenin yolculuğu</p>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="row-gap-md-4 mb-4">
+                <div class="process-card p-4 h-100">
+                    <h3 class="process-title mb-3">Seçim</h3>
+                    <p class="process-text">
+                        En kaliteli yeşil kahve çekirdeklerini titizlikle seçeriz.
+                    </p>
+                </div>
+            </div>
+            <div class="row-gap-md-4mb-4">
+                <div class="process-card p-4 h-100">
+                    <h3 class="process-title mb-3">Kavurma</h3>
+                    <p class="process-text">
+                        Her çekirdeğin karakterini ortaya çıkaran dengeli kavurma teknikleri uygularız.
+                    </p>
+                </div>
+            </div>
+            <div class="row-gap-md-4 mb-4">
+                <div class="process-card p-4 h-100">
+                    <h3 class="process-title mb-3">Paketleme</h3>
+                    <p class="process-text">
+                        Tazeliği koruyan, çevre dostu paketleme çözümleri kullanırız.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cta-section py-5 my-3 text-center">
+    <div class="container">
+        <h2 class="cta-title mb-4">Roastiva ile Kahve Deneyimini Yeniden Keşfedin</h2>
+        <p class="cta-text mb-4">Sade, dengeli ve estetik kahve yolculuğuna katılın.</p>
+        <a asp-controller="Product" asp-action="Index" class="btn cta-btn">
+            Ürünlerimizi İncele
+        </a>
+    </div>
+</section>
