@@ -27,8 +27,8 @@ modern ve minimal bir ASP.NET MVC web projesidir.
 
 ## 📸 Ekran Görüntüleri
 
-<img src="screenshots/roastiva-homepage.png" width="900">
-<img src="screenshots/roastiva-product.png" width="900">
+<img src="roastiva-homepage.png" width="900">
+<img src="roastiva-product.png" width="900">
 
 ## 🚀 Kurulum
 1. Projeyi klonla
